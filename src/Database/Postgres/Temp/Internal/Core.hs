@@ -25,7 +25,7 @@ import           System.IO (Handle)
 import           System.IO.Unsafe (unsafePerformIO)
 import           System.Posix.Signals (sigINT, sigQUIT, signalProcess)
 import           System.Process (getPid)
-import           System.Process.Typed
+import           System.Process.Typed hiding (getPid)
 import           System.Timeout
 
 -- | Internal events for debugging
